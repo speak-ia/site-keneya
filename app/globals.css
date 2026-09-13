@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Charte graphique KENEYA KOUNAFONI SO — voir "_docs/Charte_Graphique_KKS_Design_Complet.pdf" */
+@theme {
+  /* Couleur principale : santé, confiance, croissance */
+  --color-kks-green: #166534;
+  --color-kks-green-dark: #14532d;
+  --color-kks-green-deep: #052e16;
+  --color-kks-green-light: #f0fdf4;
+  --color-kks-green-mid: #dcfce7;
+
+  /* Couleur secondaire : identité africaine, terre, proximité */
+  --color-kks-ocre: #c2410c;
+  --color-kks-ocre-dark: #9a3412;
+  --color-kks-ocre-light: #fff7ed;
+
+  /* Neutres */
+  --color-kks-gray: #1f2937;
+  --color-kks-gray-light: #f9fafb;
+
+  /* Typographie : Montserrat (titres) / Open Sans (texte) */
+  --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-white text-kks-gray font-body antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  @apply text-kks-gray;
+}
+
+/* Motif décoratif "circuits / points connectés" inspiré du logo KKS */
+.bg-circuit {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+.bg-circuit-light {
+  background-image: radial-gradient(rgba(22, 101, 52, 0.08) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+::selection {
+  background: #166534;
+  color: #ffffff;
+}
