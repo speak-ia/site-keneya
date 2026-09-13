@@ -11,7 +11,7 @@ export const site = {
     "Nous mettons la technologie au service d'une santé plus connectée, plus accessible et plus efficace.",
   sector: "Santé numérique / Informatique médicale",
   zone: "Mali et international",
-  url: "https://keneyakunafoniso.org",
+  url: "https://www.keneyakunafoniso.org",
   locale: "fr",
 
   // ⚠️ Coordonnées à compléter avec les informations officielles avant production
