@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, Check, Users, Wrench } from "lucide-react";
+import { ArrowRight, Check, ExternalLink, Users, Wrench } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { solutions } from "@/lib/content/solutions";
@@ -100,6 +100,24 @@ export default async function SolutionPage({ params }: Props) {
               </div>
               <p className="mt-3 text-sm text-kks-gray/75">{solution.tech}</p>
             </div>
+
+            {solution.slug === "tiaw" && (
+              <div className="rounded-2xl border border-gray-100 bg-white p-7 shadow-sm">
+                <h3 className="font-heading font-bold">Tableau de bord TI@W</h3>
+                <p className="mt-2 text-sm text-kks-gray/75">
+                  Accédez à l'espace d'administration pour gérer les pharmacies, les utilisateurs et les indicateurs.
+                </p>
+                <a
+                  href="https://tiaw.keneyakunafoniso.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-kks-green px-5 py-3 font-heading text-sm font-bold text-white transition-colors hover:bg-kks-green-dark"
+                >
+                  Ouvrir le dashboard
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </div>
+            )}
 
             <div className="bg-circuit rounded-2xl bg-kks-green-deep p-7 text-white">
               <h3 className="font-heading text-lg font-bold">Envie d'en savoir plus ?</h3>
