@@ -11,7 +11,7 @@ export const site = {
     "Nous mettons la technologie au service d'une santé plus connectée, plus accessible et plus efficace.",
   sector: "Santé numérique / Informatique médicale",
   zone: "Mali et international",
-  url: "https://keneyakounafoni.ml", // TODO: renseigner le nom de domaine définitif
+  url: "https://keneyakunafoniso.org",
   locale: "fr",
 
   // ⚠️ Coordonnées à compléter avec les informations officielles avant production
@@ -36,7 +36,7 @@ export const site = {
    */
   stats: [
     { value: 3, suffix: "+", label: "Projets & solutions" },
-    { value: 5, suffix: "+", label: "Partenaires" },
+    { value: 6, suffix: "+", label: "Partenaires" },
     { value: 3, suffix: "", label: "Régions couvertes" },
     { value: 500, suffix: "+", label: "Professionnels accompagnés" },
   ],
